@@ -15,7 +15,7 @@ class ContactController extends ControllerBase
 
     public function indexAction()
     {
-        $this->view->form = new ContactForm;
+        $this->view->form = new ContactsForm;
     }
 
     /**
@@ -27,8 +27,8 @@ class ContactController extends ControllerBase
             return $this->forward('contact/index');
         }
 
-        $form = new ContactForm;
-        $contact = new Contact();
+        $form = new ContactsForm;
+        $contact = new Contacts();
 
         // Validate the form
         $data = $this->request->getPost();

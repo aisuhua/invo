@@ -59,7 +59,7 @@ class CompaniesController extends ControllerBase
      */
     public function newAction()
     {
-        $this->view->form = new CompaniesForm(null, array('edit' => true));
+        $this->view->form = new CompaniesForm(null, array('edit' => false));
     }
 
     /**

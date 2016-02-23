@@ -3,7 +3,7 @@
 use Phalcon\Mvc\Model;
 use Phalcon\Db\RawValue;
 
-class Contact extends Model
+class Contacts extends Model
 {
 
 	public $id;
